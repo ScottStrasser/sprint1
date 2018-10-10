@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
+<script src="validate.js"></script>
+</head>
+
+<body>
+	<div class="content">
+	
+	<div class="navigation">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="about.html">About Us</a></li>
+		</ul>
+	</div>
+	
+	<h1>Comments or Concerns? Send us a message!</h1>
+	
+	<div class="contactform">
+		
+		<form id="submit" name="contact" action="thankyou.html" onsubmit="return validateForm()" method="POST">
+		<fieldset class="info">
+			<legend>Please Fill Out the Below Fields</legend>
+			<label>E-mail Address </label><input type="text" name="email"><br />
+			<label>Phone Number </label><input type="text" name="number"><br />
+			<p>Please Enter Your Message Below</p> 
+			<textarea name="comments" rows="5" cols="50"></textarea><br>
+			<div class="button">
+			<input type="submit" class="submit">
+			</div>
+		</fieldset>
+		</form>
+	</div>
+	</div>
+</body>
+</html>
