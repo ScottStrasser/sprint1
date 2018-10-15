@@ -1,13 +1,17 @@
-
+body {
+	background-color: #0045e3;
+}
 .content{
 	display: block;
 	margin: auto;
 	width: 60%;
 	font-family: Arial;
+	background-color: white;
+	border: none;
 }
 
 h1 {
-	color: darkblue;
+	color: #0045e3;
 	font-weight: bold;
 	text-align: center;
 }
@@ -24,13 +28,6 @@ img{
 	margin-right: auto;
 }
 
-a:visited{
-	color: blue;
-}
-a:hover{
-	color: purple;
-}
-
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -42,7 +39,7 @@ input[type=text], select {
 }
 
 legend{
-	font-size: 24px;
+	font-size: 22px;
 }
 
 input[type=submit]{
@@ -52,6 +49,15 @@ input[type=submit]{
 	margin: 8px 0; 
 	cursor: pointer;
 	font-size: 18px;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	border: none;
+	text-transform: uppercase;
+}
+input[type=submit]:hover {
+	background-color: #fffd00;
+	color: black;
 }
 
 textarea {
@@ -65,32 +71,44 @@ textarea {
     font-size: 16px;
     resize: none;
 }
+fieldset {
+	border: none;
+}
 .button{
 	text-align: center;
 }
-.container{
-	border: 1px solid #ccc;
-}
+
 
 .navigation{
 	display: block;
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style:none;
-    padding:0;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    list-style: none;
+    padding: 0;
 	text-align: left;
 }
 .navigation li{
-    display:inline-block;
+    display: inline-block;
+	border-radius: 7px;
+	background-color: black;
+	padding: 0 2px;
+	margin: 0 5px;
+}
+.navigation li:hover {
+	background-color: #fffd00;
 }
 
 .navigation a{
-    display:inline-block;
+	color: white;
+    display: inline-block;
     padding:10px;
 	text-decoration: none;
-	font-family: Arial;
 	font-size: 20px;  
-	
+}
+
+.navigation a:hover {
+	color: black;
+	background-color: #black;
 }
 
 .column {
