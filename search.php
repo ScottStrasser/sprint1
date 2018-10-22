@@ -22,7 +22,7 @@ print "</div>\n";
 
 print "<div class='search_form'>\n";
 		
-print "<form id='submit' name='search' action='bookSearchResults.php' method='POST'>\n";
+print "<form id='submit' name='search' action='bookSearchResults.php' method='POST'><br/>\n";
 print "<fieldset class='info'>\n";
 print "<legend>Search via Book Title, Author, or ISBN</legend>\n";
 print "<input type='text' name='search_input'><br />\n";
@@ -37,3 +37,4 @@ print "</div>\n";
 print "</div>\n";
 print $page->getBottomSection();
 
+?>
