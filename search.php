@@ -20,9 +20,10 @@ print "<li><a href='search.php'>Search</a></li>\n";
 print "</ul>\n";
 print "</div>\n";
 
+print "<h1>Book Search</h1>\n";
 print "<div class='search_form'>\n";
 		
-print "<form id='submit' name='search' action='bookSearchResults.php' method='POST'><br/>\n";
+print "<form id='submit' name='search' action='bookSearchResults.php' method='POST'>\n";
 print "<fieldset class='info'>\n";
 print "<legend>Search via Book Title, Author, or ISBN</legend>\n";
 print "<input type='text' name='search_input'><br />\n";
