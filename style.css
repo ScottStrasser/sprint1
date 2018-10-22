@@ -141,9 +141,22 @@ section{
 	padding: 20px;
 }
 .thankyou{
-	border-style: solid;
-	border: 8px solid #ccc;
 	padding: 20px;
 	text-align: center;
 	margin: 50px;
+}
+.returnButton {
+	display: inline-block;
+	text-align: center;
+	border-radius: 7px;
+	background-color: black;
+}
+.returnButton:hover {
+	background-color: #fffd00;
+}
+.returnButton a{
+	color: white;
+}
+.returnButton a:hover {
+	color: black;
 }
