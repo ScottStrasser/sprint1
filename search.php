@@ -2,7 +2,7 @@
 
 require_once("Template.php");
 
-$page = new Template("Contact Us");
+$page = new Template("Book Search");
 $page->setHeadSection("<link rel='stylesheet' href='style.css'>");
 $page->setHeadSection("<script src='validate.js'></script>");
 $page->setTopSection();
