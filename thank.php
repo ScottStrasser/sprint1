@@ -47,7 +47,7 @@ else {
 		)";
 		
 		$db->dbCall($query);
-
+		
 		if(!is_numeric($number) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			print "<h1>Input Not Valid</h1>\n";
 			print "<div class='returnButton'>\n";
@@ -57,9 +57,10 @@ else {
 			print "<div class='thankyou'>\n";
 			print "<h2>Thank you for contacting us, we will message you shortly</h2>\n";
 			print "</div>\n";
-
+			
 			print "</div>\n";
 		}
 	}
+
 print $page->getBottomSection();
 

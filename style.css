@@ -146,9 +146,12 @@ section{
 	margin: 50px;
 }
 .returnButton {
-	display: inline-block;
 	text-align: center;
 	border-radius: 7px;
+	border: none;
+	width: 35%;
+	margin: 0 auto;
+	padding: 8px 2px;
 	background-color: black;
 }
 .returnButton:hover {
@@ -156,6 +159,8 @@ section{
 }
 .returnButton a{
 	color: white;
+	text-decoration: none;
+	font-size: 20px;
 }
 .returnButton a:hover {
 	color: black;
