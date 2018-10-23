@@ -36,34 +36,30 @@ if (!$db->getConnStatus()) {
   print "An error has occurred with connection\n";
   exit;
 }
-else
-{
-	
-	$query = "INSERT INTO Contact () 
-	VALUES (
-	0,
-	now(),
-	'{$sanNumber}', 
-	'{$sanEmail}',
-	'{$sanComments}'
-	)";
-	
-	$db->dbCall($query);
+else {
+		$query = "INSERT INTO Contact () 
+		VALUES (
+		0,
+		now(),
+		'{$sanNumber}', 
+		'{$sanEmail}',
+		'{$sanComments}'
+		)";
+		
+		$db->dbCall($query);
 
-	if(!is_numeric($number) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		print "<h1>Input Not Valid</h1>\n";
-		print "<div class='returnButton'>\n";
-		print "<a href='contact.php'>Return to Contact Form</a>\n";
-		print "</div>\n";
-	} else {
-		print "<div class='thankyou'>\n";
-		print "<h2>Thank you for contacting us, we will message you shortly</h2>\n";
-		print "</div>\n";
+		if(!is_numeric($number) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			print "<h1>Input Not Valid</h1>\n";
+			print "<div class='returnButton'>\n";
+			print "<a href='contact.php'>Return to Contact Form</a>\n";
+			print "</div>\n";
+		} else {
+			print "<div class='thankyou'>\n";
+			print "<h2>Thank you for contacting us, we will message you shortly</h2>\n";
+			print "</div>\n";
 
-		print "</div>\n";
+			print "</div>\n";
+		}
 	}
-
-
-
 print $page->getBottomSection();
 
